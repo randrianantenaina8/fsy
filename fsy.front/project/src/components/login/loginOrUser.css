@@ -1,0 +1,15 @@
+div.login-button {
+    position: absolute;
+    right: 1rem;
+    padding: 1rem;
+}
+
+div.login-button a{
+    color: var(--link-color);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+div.login-button a:hover{
+    color: var(--link-color-hover);
+    text-decoration: underline;
+}

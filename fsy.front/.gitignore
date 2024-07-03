@@ -1,0 +1,24 @@
+.idea/
+
+# dependencies
+project/node_modules/
+project/.pnp
+project/.pnp.js
+project/package-lock.json
+
+# testing
+project/coverage
+
+# production
+project/build
+project/drivers
+
+# misc
+project/.DS_Store
+project/.env.local
+project/.env.development.local
+project/.env.test.local
+project/.env.production.local
+project/npm-debug.log*
+project/yarn-debug.log*
+project/yarn-error.log*

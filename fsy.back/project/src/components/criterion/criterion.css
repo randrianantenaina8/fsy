@@ -1,0 +1,22 @@
+article.criterion {
+    width: 100%;
+    height: 100vh;
+    padding: 0 1rem;
+}
+
+/* ================================== Criterion table ================================== */
+
+section.criterion-table div.criterion-table-content {
+    position: relative;
+}
+
+div.criterionTable div.criterion-specific {
+    display: flex;
+    align-items: center;
+}
+
+div.criterionTable div.criterion-specific svg {
+    color: var(--middle-gray);
+    padding-left: .25em;
+    font-size: 1.25em;
+}

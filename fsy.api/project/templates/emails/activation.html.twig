@@ -1,0 +1,34 @@
+{% extends 'emails/_baseEmails.html.twig' %}
+
+{% block title %}Activation de votre compte - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <div class="paragraph">
+        <div>Bonjour,</div>
+        <div>Une demande de (ré)activation de votre compte <b>{{ appName }}</b> a été faite</div>
+    </div>
+
+    <div class="paragraph">
+        <div>Cliquez sur le lien suivant afin de lancer la procédure de réactivation</div>
+
+        <div class="activation">
+            {% set domain = get_domain_by_profile(user) %}
+
+            <a href="{{ domain }}/activate?token={{ user.lastPasswordToken }}" class="activation_link">
+                Activer mon compte
+            </a>
+        </div>
+
+        <div>
+            Si le lien ne fonctionne pas, copier-coller le lien ci-dessous dans un nouvel onglet de votre navigateur
+        </div>
+        <div class="plain_link">{{ domain }}/activate?token={{ user.lastPasswordToken }}</div>
+
+        <div>
+            Attention, ce lien n'est actif que 24 h ! Passé ce délai vous devrez générer une nouvelle demande via le
+            lien "mot de passe oublié"
+        </div>
+    </div>
+
+
+{% endblock %}

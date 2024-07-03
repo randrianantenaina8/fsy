@@ -1,0 +1,55 @@
+{
+  "home": {
+    "title": "Accueil",
+    "hello": "Bonjour",
+    "signIn": "Se connecter",
+    "accessGame": "Accéder au jeu"
+  },
+  "error": "Une erreur est survenue, merci de rééssayer ou de contacter un administrateur",
+  "activate": {
+    "title": "Activer votre compte",
+    "description": "Pour activer le compte lié à l'adresse {{mail}}, veuillez choisir un mot de passe robuste",
+    "activate": "Activer mon compte",
+    "feedbacks": {
+      "invalidToken": "Le token que vous avez fourni n'est pas valide. Vérifiez que vous avez bien copier le lien reçu par mail",
+      "tokenExpired": "Le token d'activation de votre compte a expiré. Veuillez en générer un nouveau en utilisant le boutton ci-dessous",
+      "passwordDoNotMatch": "Impossible d'activer le compte : les deux mots de passes doivent être identiques",
+      "passwordWeak": "Impossible d'activer le compte : le mot de passe saisi ne respecte pas les règles de sécurité",
+      "activationMail": "Un mail d'activation a été envoyé. Veuillez suivre les instructions contenues dans celui-ci",
+      "confirmation": "Le mot de passe bien a été créé et votre compte est activé"
+    },
+    "password": {
+      "create": "Nouveau mot de passe",
+      "confirm": "Confirmer mot de passe",
+      "security": {
+        "label": "Le mot de passe doit contenir :",
+        "length": "Au moins 8 caractères",
+        "lowercase": "Au moins 1 minuscule",
+        "uppercase": "Au moins 1 majuscule",
+        "number": "Au moins 1 chiffre",
+        "specialchar": "Au moins 1 caractère spécial (-_#@$%*!?&)",
+        "match": "Les deux mots de passe doivent être identiques"
+      }
+    }
+  },
+  "session": {
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "hello": "Bonjour {{username}}"
+  },
+  "loginForm": {
+    "singIn":"Se connecter",
+    "identifier": {
+      "required": "Email ou pseudo requis",
+      "userNotFound": "Identifiant inconnu"
+    },
+    "password": {
+      "forgotten": "Mot de passe oublié ?",
+      "invalid": "Mot de passe incorrect",
+      "emailResetPasswordSent": "Email de réinitialisation de mot de passe envoyé"
+    },
+    "indetifierAndPasswordRequired": "Identifiant et mot de passe requis",
+    "invalidToken": "Ce compte est désactivé. Réinitialisez votre mot de passe ou contactez votre administrateur",
+    "tokenExpired": "Ce compte a été banni. Contactez votre administrateur pour plus de details"
+  }
+}

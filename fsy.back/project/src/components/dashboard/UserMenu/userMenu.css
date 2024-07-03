@@ -1,0 +1,123 @@
+aside.userMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    height: 6vh;
+    color: var(--text-color-notice);
+}
+
+aside.userMenu div.userMenu-icon {
+    cursor: pointer;
+}
+
+aside.userMenu div.userMenu-icon:hover {
+    color: var(--link-color-hover);
+}
+
+aside.userMenu div.userMenu-account {
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+aside.userMenu div.userMenu-account > span:last-child {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+aside.userMenu div.userMenu-notification {
+    padding: 0 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+aside.userMenu div.userMenu-notification span {
+    padding: 1px 3px;
+    margin: 0 5px;
+}
+
+aside.userMenu div.userMenu-notification .notification-badge.hasNotif .MuiBadge-badge {
+    animation: bulbanim 1.5s ease infinite;
+}
+
+aside.userMenu div.userMenu-notification .notification-list {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    min-width: 20vw;
+    cursor: default;
+    padding: .5rem;
+    z-index: 100;
+}
+
+div.userMenu-notification .notification-list-header {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+div.userMenu-notification .notification-item {
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border-sm);
+}
+
+div.userMenu-notification .notification-item.unread {
+    /*background: var(--clearer-accent-color);*/
+}
+
+div.userMenu-notification .notification-item a {
+    color: var(--text-color);
+    text-decoration: none;
+    width: 90%;
+}
+
+div.userMenu-notification .notification-item div.notification-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div.userMenu-notification .notification-item div.notification-item-icon {
+    width: 10%;
+    padding: .25rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.userMenu-notification a .notification-item-date {
+    color: var(--text-color-notice);
+}
+
+div.userMenu-notification .notification-list .notification-list-footer {
+    padding: 10px 5px 5px;
+    font-size: 1em;
+}
+
+div.userMenu-notification .notification-list .notification-list-footer > div {
+    cursor: pointer;
+}
+
+aside.userMenu .notification-badge{
+    color: var(--text-color-notice);
+    font-size: 1.5em;
+}
+
+
+@keyframes bulbanim {
+    0% {
+        box-shadow: 0 0 0 0 red
+    }
+
+    50% {
+        box-shadow: 0 0 0 9px 1px rgba(255, 0, 0, .5)
+    }
+
+    100% {
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0)
+    }
+}

@@ -1,0 +1,9 @@
+section.simulator-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section.simulator-title h3 {
+    margin: 20px;
+}

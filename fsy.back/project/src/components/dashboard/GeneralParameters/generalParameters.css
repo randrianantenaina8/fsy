@@ -1,0 +1,45 @@
+article.parameters input {
+    text-align: center;
+    color: var(--text-color);
+    position: relative;
+}
+
+div.parameters-item {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+div.parameters-item.fullwidth {
+    grid-template-columns: 100%;
+}
+
+div.parameters-item > div.parameters-switch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.parameters-item > div.parameters-url {
+    display: flex;
+    align-items: center;
+}
+
+div.parameters-item > div.parameters-url div.input-url {
+    margin: 0;
+    padding: 0;
+    width: 78%;
+}
+
+div.parameters-item > div.parameters-url input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 15px;
+}
+
+div.parameters-item > div.parameters-url button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 33px;
+}

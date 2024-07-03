@@ -1,0 +1,56 @@
+{% extends 'emails/_baseEmails.html.twig' %}
+
+{% block title %}Votre compte a été créé - {{ parent() }}{% endblock %}
+
+{% block body %}
+    <div class="paragraph">
+        <div>Bonjour,</div>
+        <div>Votre compte a été créé sur <b>{{ appName }}</b>.</div>
+    </div>
+
+    <div class="paragraph">
+        <div>
+            Vous devez maintenant créer un mot de passe et activer votre compte en cliquant sur le lien suivant :
+        </div>
+
+        {% set domain = get_domain_by_profile(user) %}
+
+        <div class="activation">
+            <a href="{{ domain }}/activate?token={{ user.lastPasswordToken }}" class="activation_link">Activer
+                mon compte</a>
+        </div>
+
+        <div>
+            Si le lien ne fonctionne pas, copiez-collez le lien ci-dessous dans un nouvel onglet de votre navigateur :
+        </div>
+
+        <div class="plain_link">{{ domain }}/activate?token={{ user.lastPasswordToken }}</div>
+
+        <div>
+            Attention, ce lien n'est actif que pendant {{ tokenTTL }}h ! Passé ce délai vous devrez générer une nouvelle
+            demande via le lien "mot de passe oublié".
+        </div>
+    </div>
+
+    <div class="paragraph">
+        <div>Voici les informations relatives à votre compte qui ont été renseignées par votre société :</div>
+        <div>
+            <div>
+                <b>Nom :</b>
+                <span>{{ user.name }}</span>
+            </div>
+            <div>
+                <b>Prénom :</b>
+                <span>{{ user.surname }}</span>
+            </div>
+            <div>
+                <b>Email :</b>
+                <span>{{ user.email }}</span>
+            </div>
+            <div>
+                <b>Date de création :</b>
+                <span>{{ user.creationDate |date("d/m/Y H:i:s") }}</span>
+            </div>
+        </div>
+    </div>
+{% endblock %}

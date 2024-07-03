@@ -1,0 +1,58 @@
+div.loading-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: var(--overlay-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: wait;
+}
+
+div.loading-overlay div.overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.loading-overlay div.overlay-content > svg {
+    font-size: 6rem;
+}
+
+div.loading-overlay div.overlay-content > div {
+    font-size: 1.5rem;
+}
+
+div.loading-overlay div.overlay-brand {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 1010;
+    width: 15vw;
+}
+
+div.loading-overlay div.overlay-brand img {
+    width: 100%;
+}
+
+/* =========================================== LAODING =========================================== */
+div.loading {
+    position: absolute;
+    inset: 0;
+    z-index: 1000;
+    background: var(--overlay-background-transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: wait;
+}
+
+div.loading-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--main-accent-color);
+}

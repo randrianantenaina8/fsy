@@ -1,0 +1,15 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        appName: '%app.name%'
+        appVersion: '%app.version%'
+        supportMail: '%lexaura.support%'
+        tokenTTL: '%tokenTTL%'
+        front_domain: '%front_domain%'
+        bo_domain: '%bo_domain%'
+    paths:
+        '%kernel.project_dir%/public/css': styles
+
+when@test:
+    twig:
+        strict_variables: true

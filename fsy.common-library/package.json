@@ -1,0 +1,25 @@
+{
+  "name": "fsy.common-library",
+  "description": "React library for Fransylva simulator",
+  "version": "0.11.10",
+  "main": "index.js",
+  "author": "Sébastien RINGOT <sringot@nextaura.com>",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.lexaura.eu/nextaura/fsy/fsy.common-library.git"
+  },
+  "contributors": [
+    "Sébastien RINGOT <sringot@nextaura.com>"
+  ],
+  "scripts": {
+    "test": "jest --silent",
+    "build": "NODE_ENV=production grunt build"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
+  }
+}

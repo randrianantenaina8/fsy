@@ -1,0 +1,21 @@
+section.error-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+div.error-code{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+div.error-title{
+    font-size: 3rem;
+    font-style: italic;
+}
+
+div.error-message {
+    font-size: 1.5rem;
+}

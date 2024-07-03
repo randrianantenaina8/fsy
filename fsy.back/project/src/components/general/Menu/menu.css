@@ -1,0 +1,151 @@
+aside.menu {
+    background: var(--menu-background-gradient);
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: visible;
+}
+
+div.menu-title {
+    height: 10vh;
+}
+
+div.menu-title  img{
+    width: 100%;
+}
+
+nav.menu-nav {
+    height: 79vh;
+    width: 8vw;
+    overflow-x: visible;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div.menu-title,
+nav.menu-nav > a,
+div.menu-footer {
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    width: 95%;
+}
+
+nav.menu-nav > a {
+    min-height: 5vh;
+    font-style: unset;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--menu-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: .5rem 0;
+    padding: 1rem 1rem;
+    transition: var(--transition-all);
+}
+
+nav.menu-nav > a svg {
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+nav.menu-nav > a.active {
+    background: var(--accent-background);
+    background: var(--accent-background-gradient);
+    font-weight: bold;
+    color: var(--light-black);
+    border-radius: 0 10px 10px 0;
+    z-index: 20;
+    width: 100%;
+}
+
+nav.menu-nav > a:hover:not(.active) {
+    color: var(--secondary-accent-color);
+    font-weight: bold;
+    background: var(--overlay-background-transparent);
+}
+
+/* =============================== menu-footer =============================== */
+div.menu-footer {
+    height: 10vh;
+    font-size: .8rem;
+    padding: 0;
+    color: var(--text-color-notice);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.menu-footer div.menu-version {
+    height: 1vh;
+    text-align: center;
+}
+
+div.menu-footer div.menu-user {
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 .5rem;
+    cursor: help;
+    border-top: var(--black) 1px solid;
+}
+
+div.menu-footer div.menu-user span {
+    padding: .1rem;
+}
+
+div.menu-footer div.menu-user span.menu-user-name {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+div.menu-footer div.menu-user span.menu-user-role {
+    color: var(--dark-accent-color);
+}
+
+div.menu-footer div.menu-user span.menu-user-society {
+    font-style: italic;
+}
+
+div.menu-footer a.menu-user-logout {
+    color: var(--text-color-notice);
+    text-align: right;
+    padding: 0 .5rem;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.menu-footer a.menu-user-logout:hover {
+    color: var(--link-color-hover);
+}
+
+/* ============================================================================================================== */
+/* =============================================== MEDIA QUERIES ================================================ */
+/* ============================================================================================================== */
+
+@media screen and (max-width: 1440px) {
+
+    div.menu-title {
+        padding: 1rem .25rem;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 425px) {
+
+}

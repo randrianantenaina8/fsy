@@ -1,0 +1,44 @@
+div.dashboard-rightPanel article.dashboard-stats {
+    margin: 1rem 0;
+}
+
+div.dashboard-rightPanel article.dashboard-stats .stats-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+section.stats-list div.stats-item {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: .5rem;
+    align-items: center;
+}
+section.stats-list div.stats-item span.stats-value {
+    width: 30px;
+    text-align: right;
+    margin-right: 7px;
+}
+
+section.stats-list div.stats-item > svg {
+    width: 7%;
+    color: var(--text-color-secondary);
+    text-align: center;
+    height: 15px;
+}
+
+section.stats-list div.stats-item > a {
+    margin: 0 .25rem;
+    color: var(--text-color);
+    text-decoration: none;
+    width: 93%;
+    display: flex;
+}
+
+section.stats-list div.stats-item > a:hover {
+    color: var(--link-color);
+}

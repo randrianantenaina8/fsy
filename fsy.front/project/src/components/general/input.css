@@ -1,0 +1,66 @@
+/* ================================== INPUT/TEXTAREA ================================== */
+
+.formField {
+    display: flex;
+    position: relative;
+    padding: 15px 0 0;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.formField-input > input,
+.formField-textarea > textarea {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    background: transparent;
+    color: var(--text-color-secondary);
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}
+
+.formField-textarea > textarea {
+    resize: none;
+    min-height: 10rem;
+    margin: 5px 0 0;
+    overflow-y: scroll;
+}
+
+.formField-input > label,
+.formField-textarea > label {
+    font-size: 1.2rem;
+    cursor: text;
+    position: absolute;
+    transition: 0.5s;
+    color: var(--gray);
+    user-select: none;
+}
+
+.formField-input > span.formField-underline,
+.formField-textarea > span.formField-underline {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-accent-color);
+    transition: 0.2s;
+}
+
+/* ---------- Input focused ---------- */
+
+.formField-input > input.formField--focused ~ span.formField-underline,
+.formField-textarea > textarea.formField--focused ~ span.formField-underline {
+    width: 100%;
+    transition: 0.1s;
+    left: 0;
+}
+
+.formField-input > input.formField--focused ~ label,
+.formField-textarea > textarea.formField--focused ~ label {
+    font-size: .8rem;
+    transform: translateY(-17px);
+    transition: all 0.2s ease;
+    color: var(--dark-accent-color);
+}

@@ -1,0 +1,12 @@
+{
+  "project": {
+    "name" : "fsy.back-office",
+    "gitlab" : "https://gitlab.lexaura.eu/nextaura/fsy/fsy.back",
+    "url" : "https://fsy-stag41.nextaura.eu/"
+  },
+  "deployment": {
+    "version": "1.0",
+    "environment": "Recette",
+    "date" : "01-01-1970 00:00"
+  }
+}

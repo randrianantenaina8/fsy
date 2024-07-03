@@ -1,0 +1,72 @@
+section.modal-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.modal-wrapper:not([hidden]) div.modal-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-background-transparent);
+    z-index: 100;
+    animation: .15s backwards elements-dialog-fade-in linear;
+}
+
+section.modal-wrapper[hidden] div.modal-overlay {
+    animation: 75ms both elements-dialog-fade-out linear;
+}
+
+section.modal-wrapper div.modal {
+    position: relative;
+    min-width: 30vw;
+    min-height: 15vh;
+    background: var(--white);
+    border-radius: var(--border-radius-xs);
+    box-shadow: var(--dialog-shadow);
+    z-index: 101;
+    animation: elements-dialog-fade-in backwards 75ms linear, elements-dialog-transform backwards .15s cubic-bezier(0, 0, .2, 1);
+}
+
+section.modal-wrapper[hidden] div.modal {
+    animation: elements-dialog-fade-out forwards 75ms linear;
+}
+
+div.modal div.modal-header {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-gray);
+    position: relative;
+}
+
+div.modal div.modal-header h4 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: .5rem 0;
+    font-size: 1.2em;
+    color: var(--title-color);
+}
+
+div.modal div.modal-header .modal-close-button {
+    padding: .7rem;
+    margin: 0 .5rem;
+    border-radius: var(--border-radius-md);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+
+div.modal div.modal-footer {
+    padding: .5rem;
+}

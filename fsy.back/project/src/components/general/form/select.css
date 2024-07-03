@@ -1,0 +1,64 @@
+/* ================================== REACT-SELECT CUSTOM STYLE ================================== */
+
+.reactSelect-custom__control {
+    width: 100%;
+}
+
+.reactSelect-custom__control--is-focused {
+    border-color: var(--main-accent-color) !important;
+    box-shadow: 0 0 0 1px var(--main-accent-color) !important;
+}
+
+.reactSelect-custom__menu {
+    color: var(--black);
+    z-index: 100;
+}
+
+.reactSelect-custom__option,
+.reactSelect-custom__multi-value__remove {
+    cursor: pointer !important;
+}
+
+.reactSelect-custom__groupe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.reactSelect-custom__groupeBadge {
+    background: var(--light-gray);
+    border-radius: 2rem;
+    color: var(--gray);
+    display: inline-block;
+    padding: .1rem .5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.select-wrapper {
+    position: relative;
+    padding-top: 10px;
+}
+
+.bo-data-filters .select-wrapper {
+    margin: 0 10px;
+}
+
+.select-label {
+    display: none;
+}
+
+.select-wrapper.not-empty .select-label {
+    display: block;
+    color: var(--gray);
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    /*text-transform: uppercase;*/
+    background: #ffffff;
+    padding: 0 10px 0 5px;
+}

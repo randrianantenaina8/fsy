@@ -1,0 +1,99 @@
+/* ============================ neoButton-primary ============================ */
+
+.neoButton-primary {
+    letter-spacing: .02rem;
+    cursor: pointer;
+    background: var(--button-primary-background);
+    border: .25rem solid var(--main-accent-color);
+    padding: 1rem;
+    font-size: .9rem;
+    color: var(--button-color);
+    position: relative;
+    transition: color .3s;
+    z-index: 1;
+    margin: .5rem;
+    vertical-align: middle;
+}
+
+.neoButton-primary::before,
+.neoButton-primary::after {
+    content: '';
+    position: absolute;
+    background: var(--button-primary-background);
+    z-index: -1;
+    transition: all .3s;
+}
+
+.neoButton-primary::before {
+    width: calc(100% - 1rem);
+    height: calc(100% + .6rem);
+    top: -.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.neoButton-primary::after {
+    height: calc(100% - 1rem);
+    width: calc(100% + 0.6rem);
+    left: -.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.neoButton-primary:hover {
+    color: var(--button-color-hover);
+    /*background: var(--button-primary-background);*/
+    /*font-weight: bold;*/
+    box-shadow: var(--main-accent-color) 0 0 10px 3px;
+}
+
+.neoButton-primary:hover::before {
+    width: 0;
+}
+
+.neoButton-primary:hover::after {
+    height: 0;
+}
+
+.neoButton-primary:active {
+    border-width: .15rem;
+}
+/* ======================= neoButton-primary disabled ======================== */
+
+.neoButton-primary:disabled {
+    border: .25rem solid var(--gray);
+    color: var(--gray);
+    cursor: not-allowed;
+}
+
+.neoButton-primary:disabled:hover{
+    box-shadow: none;
+}
+
+.neoButton-primary:disabled:hover::before {
+    width: calc(100% - 1rem);
+}
+
+.neoButton-primary:disabled:hover::after {
+    height: calc(100% - 1rem);
+}
+/* ======================= neoButton-primary content ======================== */
+
+.neoButton-primary span {
+    background: var(--button-text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.neoButton-primary:hover span {
+    background: var(--button-text-gradient-hover);
+    -webkit-background-clip: text;
+}
+
+.neoButton-primary:disabled:hover span {
+    background: var(--button-text-gradient);
+    -webkit-background-clip: text;
+}
+
+/* ================================== --- ================================== */

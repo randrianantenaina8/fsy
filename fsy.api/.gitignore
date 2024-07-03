@@ -1,0 +1,43 @@
+.idea/
+composer.lock
+
+###> symfony/framework-bundle ###
+.env.local
+.env.local.php
+.env.*.local
+.env.test
+.env.*.test
+symfony.lock
+project/config/secrets/prod/prod.decrypt.private.php
+public/bundles/
+project/var/
+project/vendor/
+###< symfony/framework-bundle ###
+
+###> lexik/jwt-authentication-bundle ###
+project/config/jwt/*.pem
+###< lexik/jwt-authentication-bundle ###
+
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# production
+build
+drivers
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+###> phpunit/phpunit ###
+phpunit.xml
+.phpunit.result.cache
+pipeline/reports/
+###< phpunit/phpunit ###

@@ -1,0 +1,34 @@
+{% apply inline_css(source('@styles/mail/mail.css')) %}
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{{ appName }}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="{{ asset('images/favicon.png') }}">
+    </head>
+    <body>
+    <div class="main-content">
+        {% block body %}
+        {% endblock %}
+
+        <div class="separator"></div>
+
+        <div class="paragraph">
+            <div class="subTitle">Besoin d’aide ?</div>
+            <div>
+                Contactez votre administrateur local au sein de votre société. Si celui-ci n'est pas en mesure de
+                vous aider n'hésitez pas à contacter notre support par mail :
+                <a href="mailto:{{ supportMail }}">{{ supportMail }}</a>
+            </div>
+            <div>Ne répondez pas directement à ce mail, celui-ci est autogénéré et personne ne pourra vous
+                répondre.
+            </div>
+        </div>
+
+        <div class="signature"><span>– L'équipe <b>{{ appName }}</b></span></div>
+    </div>
+    </body>
+    </html>
+
+{% endapply %}

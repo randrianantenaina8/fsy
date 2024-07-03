@@ -1,0 +1,50 @@
+article.quickLinks {
+    width: 75%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    font-size: 1.2em;
+}
+
+article.quickLinks > section {
+    width: 15%;
+}
+
+article.quickLinks > section > div.links-container {
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+article.quickLinks > section > div.links-container svg {
+    padding-left: 1rem;
+    color: var(--text-color-notice);
+}
+
+article.quickLinks > section > div[class$="-links"] {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+article.quickLinks > section > div[class$="-links"] a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-accent-color);
+    padding: .5rem;
+}
+
+article.quickLinks > section > div[class$="-links"] a:hover{
+    background: var(--clear-accent-color);
+    color: var(--link-color-hover);
+    border-radius: var(--border-radius-sm);
+}
+
+article.quickLinks > section > div[class$="-links"] a > svg {
+    padding-bottom: .5rem;
+}

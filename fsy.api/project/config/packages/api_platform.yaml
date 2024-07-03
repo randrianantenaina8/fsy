@@ -1,0 +1,47 @@
+api_platform:
+  # The title of the API.
+  title: '%app.name_internal%'
+  # The description of the API.
+  description: '%app.description%'
+  # The version of the API.
+  version: '%app.version%'
+  # Set this to false if you want Webby to disappear.
+  show_webby: false
+  # Enable the Swagger documentation and export.
+  enable_swagger: true
+  # Enable Swagger UI.
+  enable_swagger_ui: true
+  swagger:
+    versions: [ 3 ]
+    # The swagger API keys.
+    api_keys:
+      JWT:
+        name: Authorization
+        type: header
+  # Enable the docs.
+  enable_docs: true
+  # Enable the data collector and the WebProfilerBundle integration.
+  enable_profiler: true
+  doctrine:
+    # To enable or disable Doctrine ORM support.
+    enabled: true
+  mapping:
+    paths: [ '%kernel.project_dir%/src/Entity' ]
+  patch_formats:
+    json: [ 'application/merge-patch+json' ]
+  exception_to_status:
+    # The 4 following handlers are registered by default, keep those lines to prevent unexpected side effects
+    Symfony\Component\Serializer\Exception\ExceptionInterface: 400 # Use a raw status code (recommended)
+    ApiPlatform\Exception\InvalidArgumentException: !php/const Symfony\Component\HttpFoundation\Response::HTTP_BAD_REQUEST
+    ApiPlatform\Exception\FilterValidationException: 400
+    Doctrine\ORM\OptimisticLockException: 409
+    # Validation exception
+    ApiPlatform\Validator\Exception\ValidationException: !php/const Symfony\Component\HttpFoundation\Response::HTTP_UNPROCESSABLE_ENTITY
+    # Custom mapping
+    App\Exception\RegionAlreadyExistException: 480 # Here is the handler for our custom exception
+    App\Exception\CriteriaAlreadyExistException: 481
+    App\Exception\CriterionTypeAlreadyExistException: 482
+    App\Exception\OrganizationAlreadyExistException: 483
+    App\Exception\ParameterAlreadyExistException: 484
+    App\Exception\ProfileAlreadyExistException: 485
+    App\Exception\UserAlreadyExistException: 486

@@ -1,0 +1,113 @@
+:root {
+    --main-background: #36393e;
+    --text-color: #2d3538;
+    --text-color-secondary: #9aa7af;
+    --text-color-notice: #a6afbb;
+    --main-accent-color: #007a31;
+    --secondary-accent-color: #2b8b41;
+    --dark-accent-color: #288044;
+    --clear-accent-color: #bad6c1;
+    --warning-color: #fba161;
+    --warning-color-hover: #fcbf99;
+    --alert-color: #fb6161;
+    --alert-color-hover: #fc9999;
+    --white: #fff;
+    --black: #000;
+    --light-black: #171717;
+    --darker-gray: #333;
+    --dark-gray: #666;
+    --gray: #9b9b9b;
+    --light-gray: #ebedee;
+    --lighter-gray: #faf7f7;
+    --button-background: #282c34;
+    --button-color: #15e2fa;
+
+    --border-radius-sm: 10px;
+    --border-radius-md: 14px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 18px;
+    --border-radius-2xl: 20px;
+    --border-radius-full: 50%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+b {
+    color: #2b8b41
+}
+
+div.main-content {
+    background: #fff;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: #000;
+}
+
+div.paragraph {
+    padding: 0 .5rem;
+    margin: 1rem 0;
+    align-items: center;
+    color: #333 !important;
+}
+
+div.paragraph > div {
+    margin: .5rem;
+}
+
+div.paragraph > div.subTitle {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+div.signature {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    text-align: right;
+    color: #007a31;
+}
+
+div.activation {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+div.separator {
+    width: 80%;
+    margin: 1rem 10%;
+    box-sizing: border-box;
+    border-bottom: .1rem dashed #007a31;
+}
+
+/* ===================== Activation link ===================== */
+
+a.activation_link {
+    letter-spacing: .02rem;
+    cursor: pointer;
+    background: #bad6c1;
+    border: .25rem solid #007a31;
+    border-radius: 14px;
+    padding: 1rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    transition: color .3s;
+    z-index: 1;
+    margin: .5rem;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+div.plain_link {
+    color: #2b8b41;
+}

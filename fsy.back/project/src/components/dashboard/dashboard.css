@@ -1,0 +1,83 @@
+section.dashboard {
+    padding: 1rem;
+}
+
+section.dashboard h3 {
+    margin-top: .5rem;
+}
+
+div.dashboard-datetime {
+    color: var(--text-color-notice);
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 6vh;
+    padding-bottom: 1rem;
+}
+
+div.dashboard-datetime span.dashboard-time {
+    font-size: 2rem;
+}
+
+div.dashboard-datetime span.dashboard-date {
+    font-size: 1rem;
+}
+
+div.dashboard-rightPanel {
+    width: 25%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 70vh;
+}
+
+div.dashboard-help {
+    width: 25%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 14vh;
+    font-size: 1.2em;
+}
+
+div.dashboard-help > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.dashboard-help a {
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--text-color-notice);
+    text-decoration: none;
+    width: 50%;
+    font-weight: 500;
+}
+
+div.dashboard-help a svg {
+    padding-right: .5rem;
+}
+
+div.dashboard-help a:hover {
+    color: var(--link-color-hover);
+}
+
+/* ============================================================================================================== */
+/* =============================================== MEDIA QUERIES ================================================ */
+/* ============================================================================================================== */
+
+@media screen and (max-width: 1440px) {
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 425px) {
+
+}

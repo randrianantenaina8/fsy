@@ -1,0 +1,311 @@
+/* ================================== General form ================================== */
+
+.aid-form {
+    width: 76vw;
+    height: 85vh;
+    overflow-y: auto;
+}
+
+.aid-form form {
+    height: 100%;
+    width: 100%;
+}
+
+.aid-form .aid-form-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+}
+
+.aid-form .aid-form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .25rem 2rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.aid-form .aid-form-content .aid-form-part,
+.aid-form .aid-form-content .aid-form-left-part,
+.aid-form .aid-form-content .aid-form-right-part,
+.aid-form .aid-form-content .aid-form-full {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.aid-form .aid-form-content .aid-form-part {
+    width: 50%;
+}
+
+.aid-form .aid-form-content .aid-form-left-part {
+    width: 70%;
+}
+
+.aid-form .aid-form-content .aid-form-right-part {
+    width: 30%;
+}
+
+.aid-form .aid-form-content .aid-form-full {
+    width: 100%;
+}
+
+.aid-form .error {
+    display: none;
+    color: red;
+}
+
+.aid-form .is-invalid .error {
+    display: block;
+    margin: 0 15px;
+}
+
+.aid-form a.aid-form-link {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: var(--link-color);
+    font-size: 15px;
+    height: 25px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.aid-form a.aid-form-link:hover {
+    color: var(--link-color-hover);
+}
+
+.aid-form .form-block {
+    position: relative;
+}
+
+.aid-form .flex-grow .form-block {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ================================== Aids navs ================================== */
+
+.aid-form form .aid-form-navs {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.aid-form-navs div.bo-navs {
+    margin: 0 1.7rem;
+}
+
+div.aid-form-navs div.bo-navs-content {
+    /*height: 73vh;*/
+    height: calc(100% - 3.5rem);
+    overflow-y: auto;
+}
+
+/* ================================== Aids formFields ================================== */
+
+.aid-form .formField {
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+.aid-form .formField-textarea.formField-style-classic > textarea.formField--focused ~ label,
+.aid-form .formField-input.formField-style-classic.input-tiny > input.formField--focused ~ label,
+.aid-form .formField-textarea.formField-style-classic.input-tiny > textarea.formField--focused ~ label {
+    top: 0;
+}
+
+.aid-form .formField-textarea > textarea {
+    margin: 0;
+    min-height: 6.4rem;
+}
+
+.aid-form .formField-input.formField-style-classic > input {
+    min-height: 20px;
+}
+
+.aid-form .form-block {
+    margin: 15px;
+}
+
+.aid-form .flex-input {
+    margin-left: 20px;
+}
+
+/* ================================== Aids info ================================== */
+
+.aid-form .aid-right-panel {
+    position: absolute;
+    right: -17.5vw;
+    top: 0;
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.aid-right-panel .aid-info {
+    background: var(--white);
+    border-radius: var(--border-radius-xs);
+    font-weight: 700;
+    min-height: 12vh;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-bottom: .5rem;
+}
+
+.aid-right-panel .aid-info .form-block {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* ================================== Aids activities ================================== */
+
+.aid-right-panel .aid-activities {
+    background: var(--white);
+    border-radius: var(--border-radius-xs);
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.aid-activities div.activities-list {
+    max-height: 48.5vh;
+    overflow-y: auto;
+    font-size: .8em;
+}
+
+.aid-activities div.activities-item {
+    padding: .25rem 0;
+    border-top: var(--border-sm);
+    width: 100%;
+}
+.aid-activities div.activities-item > div:first-child {
+    padding-right: .5rem;
+    width: 25%;
+    box-sizing: border-box;
+}
+.aid-activities div.activities-item > div:last-child {
+    padding-right: .5rem;
+    width: 75%;
+    box-sizing: border-box;
+}
+.aid-activities div.activities-item span.activities-date {
+    color: var(--text-color-notice)
+}
+
+/* ================================== Aids criterion ================================== */
+
+.aid-form .unite {
+    width: 70px;
+    padding-left: 7px;
+}
+
+div.aidCriteria-list {
+    width: 85%;
+    /*height: 73vh;*/
+    height: auto;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+div.aidCriteria-list div.aidCriteria-theme-section h3 {
+    margin: 2em 0 .5em;
+    color: var(--title-color);
+}
+
+div.aidCriteria-list div.aidCriteria-theme-section div.aidCriteria-theme-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+}
+
+div.aidCriteria-list div.aidCriteria-list-item {
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+div.aidCriteria-list-item div.aidCriteria-slider-value {
+    color: var(--text-color-notice);
+    font-style: italic;
+}
+
+div.aidCriteria-list-item div.aidCriteria-slider-value > span {
+    padding: 0 0.25em;
+}
+
+div.aidCriteria-list-item div.aidCriteria-slider {
+    padding: .5em 1em;
+    box-sizing: border-box;
+}
+
+div.aid-form-content div.aidCriteria-menu {
+    max-height: 50vh;
+    width: 13%;
+    margin-right: 2%;
+    overflow: hidden;
+    transition: max-height .3s cubic-bezier(.4, 0, .2, 1);
+    margin-top: 15px;
+    position: sticky;
+    top: 1rem;
+    height: auto;
+}
+
+div.aidCriteria-menu div.aidCriteria-menu-item {
+    min-height: 40px;
+    border-radius: 0 40px 40px 0;
+    transition: var(--transition-background);
+    padding: 0 8px 0 16px;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+div.aidCriteria-menu div.aidCriteria-menu-item:hover {
+    background-color: #f1f3f4;
+}
+
+div.aidCriteria-menu div.aidCriteria-menu-item > span {
+    padding: 0 0 0 20px;
+    margin: 6px 0 6px 10px;
+    color: var(--text-color-secondary);
+    flex-grow: 1;
+    flex-wrap: wrap;
+    pointer-events: none;
+    line-height: 28px;
+}
+
+div.aidCriteria-menu div.aidCriteria-menu-item.selected > span {
+    border-left: var(--title-color) 2px solid;
+    color: var(--title-color);
+    font-weight: bold;
+    z-index: 0;
+}
+
+div.aidCriteria-menu div.aidCriteria-menu-item::before {
+    content: "";
+    left: 26px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 2px;
+    background-color: #e8eaed;
+}
+
+.aid-form .MuiFormControl-root, .aid-form .MuiFormControlLabel-root {
+    /*width: 100%;*/
+}
+
+.aid-form .MuiTypography-root {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}

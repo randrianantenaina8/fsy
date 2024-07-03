@@ -1,0 +1,23 @@
+{
+  "home":{
+    "title": "Home"
+  },
+  "session": {
+    "login": "Login",
+    "logout": "Logout",
+    "hello": "Hello {{username}}"
+  },
+  "volume": {
+    "general": "General",
+    "music": "Music",
+    "sounds": "Sounds",
+    "dialogs": "Dialogs",
+    "manager": {
+      "open": "Open sound manager",
+      "close": "Close sound manager"
+    }
+  },
+  "theme": {
+    "switcher": "Switch to {{theme}} theme"
+  }
+}

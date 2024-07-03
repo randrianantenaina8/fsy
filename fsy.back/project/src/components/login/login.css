@@ -1,0 +1,99 @@
+
+h1.login-title {
+    color: var(--link-color);
+}
+
+div.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--clear-background);
+}
+
+
+img.compagny-logo {
+    width: 10vw;
+    margin: -15vh 1rem 1rem;
+}
+
+.site-logo {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 5vw;
+}
+
+.site-version {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--text-color-notice);
+}
+
+form.login-form {
+    width: 25vw;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.login-form h1.login-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+form.login-form p.login-error {
+    color: var(--alert-color);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+form.login-form p.login-notification {
+    color: var(--success-color);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+form.login-form input {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+form.login-form label {
+    font-size: 1.25em;
+}
+
+form.login-form div.formField {
+    width: 100%;
+}
+
+form.login-form .login-button {
+    margin: 20px;
+}
+
+form.login-form a.login-forgotten-password {
+    color: var(--link-color);
+    font-style: italic;
+}
+
+form.login-form a.login-forgotten-password:hover {
+    color: var(--link-color-hover);
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.no-decoration {
+    text-decoration: none;
+}

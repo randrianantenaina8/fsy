@@ -1,0 +1,12 @@
+article.stats {
+    width: 100%;
+    height: 90vh;
+    padding: 1rem;
+}
+
+
+/* ================================== Sstats table ================================== */
+
+section.stats-table  div.stats-table-content {
+    position: relative;
+}

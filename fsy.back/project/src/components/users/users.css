@@ -1,0 +1,107 @@
+.col-validation {
+    display: flex;
+    align-items: center;
+}
+
+.bo-data-table-content .badge-organization .badge {
+    text-align: left;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}
+
+.user-form .formField {
+    margin: 0;
+}
+
+.user-form .form-block .error {
+    display: none;
+    color: red;
+}
+
+.user-form .is-invalid .error {
+    display: block;
+    margin: 0 15px;
+}
+
+.user-form .form-block {
+    margin: 10px 20px;
+}
+
+/* .labelSelect{
+    margin-bottom: 5px;
+    display: block;
+} */
+
+.link-back {
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.link-back:hover {
+    color: var(--link-color);
+}
+
+/* FORM */
+
+.user-form {
+    min-width: 50vw;
+    position: relative;
+}
+
+.profile-form .user-form {
+    min-width: auto;
+}
+
+.profile-form .user-form > div:first-child {
+    padding: 0 1rem 1rem;
+}
+
+.user-form .user-form-content {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.user-form .user-form-content .user-form-part {
+    width: 50%;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+.user-form .separator {
+    width: 80%;
+    border-bottom: var(--border-sm);
+}
+
+.user-form .user-form-footer {
+    width: 100%;
+    border-top: var(--border-sm);
+    margin-top: .25rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+/* ============================================================================================================== */
+/* =============================================== MEDIA QUERIES ================================================ */
+/* ============================================================================================================== */
+
+@media screen and (max-width: 1440px) {
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 425px) {
+
+}

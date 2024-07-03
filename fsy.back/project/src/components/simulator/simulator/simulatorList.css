@@ -1,0 +1,100 @@
+section.questions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+article.questions {
+    width: 100%;
+    height: 90vh;
+}
+
+section.questions-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section.questions-title h3 {
+    margin: 20px;
+}
+
+
+/* ================================== Questions table ================================== */
+/*TODO: Make it global or more  specific*/
+div.bo-data-filters > div {
+    width: 30%;
+}
+
+div.questionsTable .badge img,
+div.questionsTable .level-display img {
+    margin-right: .25rem;
+}
+
+div.questionsTable .badge {
+    width: 100px;
+}
+
+div.questionsTable div.rdt_TableBody div[data-column-id="3"],
+div.questionsTable .badge-display,
+div.questionsTable .level-display span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================================== Questions type modal ================================== */
+
+div.questiontype-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.questiontype-list a.questiontype-button {
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius-sm);
+    font-weight: 500;
+}
+
+div.questiontype-list a.questiontype-button img {
+    background: var(--accent-background-gradient);
+    padding: 1rem;
+    border-radius: var(--border-radius-2xl);
+}
+
+div.questiontype-list a.questiontype-button.disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+div.questiontype-list a.questiontype-button.disabled img {
+    background: var(--gray);
+    cursor: not-allowed;
+}
+
+
+div.questiontype-list a.questiontype-button:hover img {
+    background: var(--accent-background);
+}
+
+div.questiontype-list a.questiontype-button:hover {
+    background: var(--lighter-gray);
+}
+
+div.questiontype-list a.questiontype-button:hover {
+    color: var(--main-accent-color);
+}

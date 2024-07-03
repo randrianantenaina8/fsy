@@ -1,0 +1,12 @@
+{
+  "project": {
+    "name" : "fsy.front",
+    "gitlab" : "https://gitlab.lexaura.eu/-/ide/project/nextaura/fsy/fsy.front",
+    "url" : "https://fsy-stag40.nextaura.eu/"
+  },
+  "deployment": {
+    "version": "1.0.0",
+    "environment": "Recette",
+    "date" : "01-01-1970 00:00"
+  }
+}
